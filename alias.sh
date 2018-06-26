@@ -10,7 +10,7 @@ alias kstop='kubectl stop jordoutils'
 #dockers
 alias dbuild='docker build -t jkbuild .'
 alias dstop='docker stop $(docker ps -q)'
-alias drun='docker run -it jkbuild bash'
+alias drun='docker run -it --rm jkbuild bash'
 
 #helms
 alias hdry='helm install -f values.yaml --dry-run --debug .'
