@@ -14,5 +14,5 @@ alias drun='docker run -it --rm jkbuild bash'
 
 #helms
 alias hdry='helm install -f values.yaml --dry-run --debug .'
-alias hkill='helm delete $(helm ls -q)'
+alias hkill='helm del --purge $(helm ls --all -q)'
 alias hdeploy='helm install -f values.yaml .'
