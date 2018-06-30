@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #kubes
-alias kk='watch -n 3 kubectl get nodes,svc,pods'
+alias kk='watch -n 1 kubectl get nodes,svc,pods'
 alias krun='kubectl run -i -t jordoutils --image=jakkaj/jordoutils:latest --restart=Never -- bash'
 alias kexec='kubectl exec -it jordoutils -- bash'
 alias kstop='kubectl stop jordoutils'
