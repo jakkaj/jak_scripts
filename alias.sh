@@ -6,6 +6,7 @@ alias krun='kubectl run -i -t jordoutils --image=jakkaj/jordoutils:latest --rest
 alias kexec='kubectl exec -it jordoutils -- bash'
 alias kstop='kubectl stop jordoutils'
 alias kdel='kubectl delete pod'
+alias kinfo='kubectl cluster-info'
 
 #dockers
 alias dbuild='docker build -t jkbuild .'
