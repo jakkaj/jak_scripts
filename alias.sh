@@ -10,6 +10,8 @@ alias kstop='kubectl stop jordoutils'
 alias kdel='kubectl delete pod'
 alias kinfo='kubectl cluster-info'
 alias kp='watch -n 1 kubectl get pods'
+alias kbomb='echo "Killing everthing!!" && sleep 3 && kubectl delete --all deployments && kubectl delete --all svc && kubectl delete --all statefulsets && kubectl delete --all pods' 
+
 
 #dockers
 alias dbuild='docker build -t jkbuild .'
