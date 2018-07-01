@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+
 #kubes
 alias kk='watch -n 1 kubectl get nodes,svc,pods'
 alias krun='kubectl run -i -t jordoutils --image=jakkaj/jordoutils:latest --restart=Never -- bash'
@@ -7,6 +9,7 @@ alias kexec='kubectl exec -it jordoutils -- bash'
 alias kstop='kubectl stop jordoutils'
 alias kdel='kubectl delete pod'
 alias kinfo='kubectl cluster-info'
+alias kp='watch -n 1 kubectl get pods'
 
 #dockers
 alias dbuild='docker build -t jkbuild .'
